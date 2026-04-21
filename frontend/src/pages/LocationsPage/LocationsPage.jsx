@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useUbicaciones } from '../hooks/useUbicaciones';
-import { useCatalogos } from '../hooks/useCatalogos';
-import HeaderNav from '../components/HeaderNav';
-import ProgressBar from '../components/ProgressBar';
-import AlertBox from '../components/AlertBox';
-import LoadingSpinner from '../components/LoadingSpinner';
-import LocationCard from '../components/LocationCard';
-import InputField from '../components/InputField';
-import SelectField from '../components/SelectField';
+import { useUbicaciones } from '../../hooks/useUbicaciones';
+import { useCatalogos } from '../../hooks/useCatalogos';
+import HeaderNav from '../../components/HeaderNav';
+import ProgressBar from '../../components/ProgressBar';
+import AlertBox from '../../components/AlertBox';
+import LoadingSpinner from '../../components/LoadingSpinner';
+import LocationCard from '../../components/LocationCard';
+import InputField from '../../components/InputField';
+import SelectField from '../../components/SelectField';
 import styles from './LocationsPage.module.css';
 
 const UBICACION_VACIA = {

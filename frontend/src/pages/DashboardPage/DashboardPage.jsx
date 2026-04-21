@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { listarCotizaciones, crearCotizacion, eliminarCotizacion } from '../services/cotizacionService';
-import HeaderNav from '../components/HeaderNav';
-import AlertBox from '../components/AlertBox';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { listarCotizaciones, crearCotizacion, eliminarCotizacion } from '../../services/cotizacionService';
+import HeaderNav from '../../components/HeaderNav';
+import AlertBox from '../../components/AlertBox';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import styles from './DashboardPage.module.css';
 
 const COP = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' });

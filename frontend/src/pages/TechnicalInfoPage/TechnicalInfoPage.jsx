@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useCoberturas } from '../hooks/useCoberturas';
-import { useCalculo } from '../hooks/useCalculo';
-import HeaderNav from '../components/HeaderNav';
-import ProgressBar from '../components/ProgressBar';
-import AlertBox from '../components/AlertBox';
-import LoadingSpinner from '../components/LoadingSpinner';
-import CoverageCheckbox from '../components/CoverageCheckbox';
-import PriceBreakdown from '../components/PriceBreakdown';
+import { useCoberturas } from '../../hooks/useCoberturas';
+import { useCalculo } from '../../hooks/useCalculo';
+import HeaderNav from '../../components/HeaderNav';
+import ProgressBar from '../../components/ProgressBar';
+import AlertBox from '../../components/AlertBox';
+import LoadingSpinner from '../../components/LoadingSpinner';
+import CoverageCheckbox from '../../components/CoverageCheckbox';
+import PriceBreakdown from '../../components/PriceBreakdown';
 import styles from './TechnicalInfoPage.module.css';
 
 export default function TechnicalInfoPage() {

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { obtenerEstado } from '../services/cotizacionService';
-import HeaderNav from '../components/HeaderNav';
-import AlertBox from '../components/AlertBox';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { obtenerEstado } from '../../services/cotizacionService';
+import HeaderNav from '../../components/HeaderNav';
+import AlertBox from '../../components/AlertBox';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import styles from './QuoteViewPage.module.css';
 
 const COP = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' });

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCotizacion } from '../hooks/useCotizacion';
-import { listarCotizaciones } from '../services/cotizacionService';
-import InputField from '../components/InputField';
-import AlertBox from '../components/AlertBox';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { useCotizacion } from '../../hooks/useCotizacion';
+import { listarCotizaciones } from '../../services/cotizacionService';
+import InputField from '../../components/InputField';
+import AlertBox from '../../components/AlertBox';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import styles from './CotizadorPage.module.css';
 
 const COP = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' });

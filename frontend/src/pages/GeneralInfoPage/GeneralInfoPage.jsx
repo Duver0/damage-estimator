@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useGeneralInfo } from '../hooks/useGeneralInfo';
-import HeaderNav from '../components/HeaderNav';
-import ProgressBar from '../components/ProgressBar';
-import InputField from '../components/InputField';
-import SelectField from '../components/SelectField';
-import AlertBox from '../components/AlertBox';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { useGeneralInfo } from '../../hooks/useGeneralInfo';
+import HeaderNav from '../../components/HeaderNav';
+import ProgressBar from '../../components/ProgressBar';
+import InputField from '../../components/InputField';
+import SelectField from '../../components/SelectField';
+import AlertBox from '../../components/AlertBox';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import styles from './GeneralInfoPage.module.css';
 
 const TIPOS_NEGOCIO = [
