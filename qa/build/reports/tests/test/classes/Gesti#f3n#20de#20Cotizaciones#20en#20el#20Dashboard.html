@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Gestión de Cotizaciones en el Dashboard</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Gestión de Cotizaciones en el Dashboard</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Gestión de Cotizaciones en el Dashboard</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">21.675s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Editar cotización navega a datos generales</td>
+<td class="success">2.349s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Editar cotización navega a datos generales</td>
+<td class="success">2.437s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">El botón Nueva Cotización crea una cotización y navega a datos generales</td>
+<td class="success">1.901s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">El botón Nueva Cotización crea una cotización y navega a datos generales</td>
+<td class="success">1.843s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">El dashboard carga con título y tabla visibles</td>
+<td class="success">1.769s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">El dashboard carga con título y tabla visibles</td>
+<td class="success">1.768s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Eliminar cotización desde el dashboard</td>
+<td class="success">2.635s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Eliminar cotización desde el dashboard</td>
+<td class="success">2.444s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Ver detalle de una cotización existente</td>
+<td class="success">2.325s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Ver detalle de una cotización existente</td>
+<td class="success">2.204s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@dashboard @ui @dashboard_carga @smoke
+Escenario: El dashboard carga con título y tabla visibles ?[90m# features/dashboard/gestion_cotizaciones.feature:12?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m  ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mEntonces ?[0m?[32mve el título ?[0m?[32m?[1m&quot;Dashboard de Cotizaciones&quot;?[0m       ?[90m# com.cotizador.features.DashboardStepDefinitions.verTitulo(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mla tabla de cotizaciones es visible en la página?[0m      ?[90m# com.cotizador.features.DashboardStepDefinitions.tablaVisible()?[0m
+
+@dashboard @ui @nueva_cotizacion_dashboard @smoke
+Escenario: El botón Nueva Cotización crea una cotización y navega a datos generales ?[90m# features/dashboard/gestion_cotizaciones.feature:17?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m                            ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón ?[0m?[32m?[1m&quot;Nueva Cotización&quot;?[0m                                   ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnBoton(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;general-info&quot;?[0m                                           ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+
+@dashboard @ui @eliminar_cotizacion @smoke
+Escenario: Eliminar cotización desde el dashboard                ?[90m# features/dashboard/gestion_cotizaciones.feature:22?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m         ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mDado ?[0m?[32mque existe al menos una cotización registrada?[0m             ?[90m# com.cotizador.features.DashboardStepDefinitions.existeAlMenosUnaCotizacion()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón eliminar de la primera cotización?[0m ?[90m# com.cotizador.features.DashboardStepDefinitions.hacerClicEliminar()?[0m
+  ?[32mY ?[0m?[32mconfirma la eliminación en el diálogo?[0m                        ?[90m# com.cotizador.features.DashboardStepDefinitions.confirmarEliminacion()?[0m
+  ?[32mEntonces ?[0m?[32mla lista de cotizaciones se actualiza?[0m                 ?[90m# com.cotizador.features.DashboardStepDefinitions.listaActualizada()?[0m
+
+@dashboard @ui @ver_cotizacion @smoke
+Escenario: Ver detalle de una cotización existente          ?[90m# features/dashboard/gestion_cotizaciones.feature:29?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m    ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mDado ?[0m?[32mque existe al menos una cotización registrada?[0m        ?[90m# com.cotizador.features.DashboardStepDefinitions.existeAlMenosUnaCotizacion()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón ver de la primera cotización?[0m ?[90m# com.cotizador.features.DashboardStepDefinitions.hacerClicVer()?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;/view&quot;?[0m                          ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+
+@dashboard @ui @editar_cotizacion @smoke
+Escenario: Editar cotización navega a datos generales          ?[90m# features/dashboard/gestion_cotizaciones.feature:35?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m       ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mDado ?[0m?[32mque existe al menos una cotización registrada?[0m           ?[90m# com.cotizador.features.DashboardStepDefinitions.existeAlMenosUnaCotizacion()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón editar de la primera cotización?[0m ?[90m# com.cotizador.features.DashboardStepDefinitions.hacerClicEditar()?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;/general-info&quot;?[0m                     ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+
+@dashboard @ui @dashboard_carga @smoke
+Escenario: El dashboard carga con título y tabla visibles ?[90m# features/dashboard/gestion_cotizaciones.feature:12?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m  ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mEntonces ?[0m?[32mve el título ?[0m?[32m?[1m&quot;Dashboard de Cotizaciones&quot;?[0m       ?[90m# com.cotizador.features.DashboardStepDefinitions.verTitulo(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mla tabla de cotizaciones es visible en la página?[0m      ?[90m# com.cotizador.features.DashboardStepDefinitions.tablaVisible()?[0m
+
+@dashboard @ui @nueva_cotizacion_dashboard @smoke
+Escenario: El botón Nueva Cotización crea una cotización y navega a datos generales ?[90m# features/dashboard/gestion_cotizaciones.feature:17?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m                            ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón ?[0m?[32m?[1m&quot;Nueva Cotización&quot;?[0m                                   ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnBoton(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;general-info&quot;?[0m                                           ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+
+@dashboard @ui @eliminar_cotizacion @smoke
+Escenario: Eliminar cotización desde el dashboard                ?[90m# features/dashboard/gestion_cotizaciones.feature:22?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m         ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mDado ?[0m?[32mque existe al menos una cotización registrada?[0m             ?[90m# com.cotizador.features.DashboardStepDefinitions.existeAlMenosUnaCotizacion()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón eliminar de la primera cotización?[0m ?[90m# com.cotizador.features.DashboardStepDefinitions.hacerClicEliminar()?[0m
+  ?[32mY ?[0m?[32mconfirma la eliminación en el diálogo?[0m                        ?[90m# com.cotizador.features.DashboardStepDefinitions.confirmarEliminacion()?[0m
+  ?[32mEntonces ?[0m?[32mla lista de cotizaciones se actualiza?[0m                 ?[90m# com.cotizador.features.DashboardStepDefinitions.listaActualizada()?[0m
+
+@dashboard @ui @ver_cotizacion @smoke
+Escenario: Ver detalle de una cotización existente          ?[90m# features/dashboard/gestion_cotizaciones.feature:29?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m    ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mDado ?[0m?[32mque existe al menos una cotización registrada?[0m        ?[90m# com.cotizador.features.DashboardStepDefinitions.existeAlMenosUnaCotizacion()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón ver de la primera cotización?[0m ?[90m# com.cotizador.features.DashboardStepDefinitions.hacerClicVer()?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;/view&quot;?[0m                          ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+
+@dashboard @ui @editar_cotizacion @smoke
+Escenario: Editar cotización navega a datos generales          ?[90m# features/dashboard/gestion_cotizaciones.feature:35?[0m
+  ?[32mDado ?[0m?[32mque el usuario abre la aplicación en el dashboard?[0m       ?[90m# com.cotizador.features.CommonUIStepDefinitions.abrirDashboard()?[0m
+  ?[32mDado ?[0m?[32mque existe al menos una cotización registrada?[0m           ?[90m# com.cotizador.features.DashboardStepDefinitions.existeAlMenosUnaCotizacion()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón editar de la primera cotización?[0m ?[90m# com.cotizador.features.DashboardStepDefinitions.hacerClicEditar()?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;/general-info&quot;?[0m                     ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Apr 20, 2026, 10:45:02 PM</p>
+</div>
+</div>
+</body>
+</html>
