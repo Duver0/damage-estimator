@@ -43,6 +43,10 @@ docker-compose.override.yml
 .claude/*.db
 .claude/.cache/
 
+# CLAUDE agent memory inside frontend (local agent caches)
+frontend/.claude/
+frontend/.claude/**
+
 # Logs and OS files
 logs/
 *.log
