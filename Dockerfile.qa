@@ -1,0 +1,12 @@
+FROM gradle:8.5-jdk17
+
+WORKDIR /app
+
+COPY qa/build.gradle qa/gradle.properties qa/settings.gradle ./
+
+RUN gradle dependencies --no-daemon -q 2>/dev/null || true
+
+COPY qa/src/ src/
+
+ENTRYPOINT ["gradle"]
+CMD ["test", "aggregate", "--no-daemon", "-Denvironment=docker"]
