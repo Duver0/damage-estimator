@@ -1,0 +1,65 @@
+[
+  {
+    "clave_giro": "6311",
+    "clave_incendio": "1000",
+    "descripcion": "Oficinas administrativas",
+    "sector": "Servicios",
+    "riesgo": "BAJO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  },
+  {
+    "clave_giro": "5210",
+    "clave_incendio": "2000",
+    "descripcion": "Almacenamiento y bodegas",
+    "sector": "Comercio",
+    "riesgo": "MEDIO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  },
+  {
+    "clave_giro": "4711",
+    "clave_incendio": "3000",
+    "descripcion": "Comercio al por menor",
+    "sector": "Comercio",
+    "riesgo": "MEDIO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  },
+  {
+    "clave_giro": "3511",
+    "clave_incendio": "4000",
+    "descripcion": "Industria manufacturera",
+    "sector": "Industrial",
+    "riesgo": "ALTO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  },
+  {
+    "clave_giro": "6810",
+    "clave_incendio": "5000",
+    "descripcion": "Actividades inmobiliarias residenciales",
+    "sector": "Servicios",
+    "riesgo": "BAJO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  },
+  {
+    "clave_giro": "5610",
+    "clave_incendio": "6000",
+    "descripcion": "Restaurantes y servicios de alimentos",
+    "sector": "Servicios",
+    "riesgo": "MEDIO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  },
+  {
+    "clave_giro": "8621",
+    "clave_incendio": "7000",
+    "descripcion": "Hospitales y clínicas",
+    "sector": "Salud",
+    "riesgo": "MEDIO",
+    "requiere_clave_incendio": true,
+    "activo": true
+  }
+]

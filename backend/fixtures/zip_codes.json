@@ -1,0 +1,122 @@
+[
+  {
+    "codigo_postal": "110111",
+    "estado": "CUNDINAMARCA",
+    "municipio": "Bogotá D.C.",
+    "colonia": "La Candelaria",
+    "ciudad": "Bogotá",
+    "es_zona_cat": false,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.0,
+    "descripcion": "Centro histórico Bogotá"
+  },
+  {
+    "codigo_postal": "110221",
+    "estado": "CUNDINAMARCA",
+    "municipio": "Bogotá D.C.",
+    "colonia": "Chapinero",
+    "ciudad": "Bogotá",
+    "es_zona_cat": false,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.0,
+    "descripcion": "Chapinero - zona comercial Bogotá"
+  },
+  {
+    "codigo_postal": "050001",
+    "estado": "ANTIOQUIA",
+    "municipio": "Medellín",
+    "colonia": "El Centro",
+    "ciudad": "Medellín",
+    "es_zona_cat": false,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.0,
+    "descripcion": "Centro urbano Medellín"
+  },
+  {
+    "codigo_postal": "760001",
+    "estado": "VALLE DEL CAUCA",
+    "municipio": "Cali",
+    "colonia": "Centro",
+    "ciudad": "Cali",
+    "es_zona_cat": false,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.0,
+    "descripcion": "Centro urbano Cali"
+  },
+  {
+    "codigo_postal": "080001",
+    "estado": "ATLANTICO",
+    "municipio": "Barranquilla",
+    "colonia": "Centro",
+    "ciudad": "Barranquilla",
+    "es_zona_cat": true,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "CICLONES_ATLANTICO",
+    "factor_riesgo": 1.5,
+    "descripcion": "Costa Atlántica - riesgo CAT ciclones"
+  },
+  {
+    "codigo_postal": "130001",
+    "estado": "BOLIVAR",
+    "municipio": "Cartagena",
+    "colonia": "Centro Histórico",
+    "ciudad": "Cartagena",
+    "es_zona_cat": true,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "CICLONES_ATLANTICO",
+    "factor_riesgo": 1.5,
+    "descripcion": "Costa Caribe - riesgo CAT ciclones"
+  },
+  {
+    "codigo_postal": "170001",
+    "estado": "CALDAS",
+    "municipio": "Manizales",
+    "colonia": "Centro",
+    "ciudad": "Manizales",
+    "es_zona_cat": true,
+    "zona_tev": "ZONA_SISMICA_ALTA",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.5,
+    "descripcion": "Eje Cafetero - alto riesgo sísmico"
+  },
+  {
+    "codigo_postal": "630001",
+    "estado": "QUINDIO",
+    "municipio": "Armenia",
+    "colonia": "Centro",
+    "ciudad": "Armenia",
+    "es_zona_cat": true,
+    "zona_tev": "ZONA_SISMICA_ALTA",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.75,
+    "descripcion": "Eje Cafetero - alto riesgo sísmico (terremoto 1999)"
+  },
+  {
+    "codigo_postal": "680001",
+    "estado": "SANTANDER",
+    "municipio": "Bucaramanga",
+    "colonia": "Centro",
+    "ciudad": "Bucaramanga",
+    "es_zona_cat": false,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.0,
+    "descripcion": "Centro urbano Bucaramanga"
+  },
+  {
+    "codigo_postal": "540001",
+    "estado": "NORTE DE SANTANDER",
+    "municipio": "Cúcuta",
+    "colonia": "Centro",
+    "ciudad": "Cúcuta",
+    "es_zona_cat": false,
+    "zona_tev": "NO_APLICABLE",
+    "zona_fhm": "NORMAL",
+    "factor_riesgo": 1.0,
+    "descripcion": "Centro urbano Cúcuta"
+  }
+]

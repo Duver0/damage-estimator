@@ -1,0 +1,112 @@
+[
+  {
+    "codigo_garantia": "INCENDIO_EDIFICIOS",
+    "nombre": "Incendio - Edificio",
+    "descripcion": "Cobertura de incendio en la estructura del edificio",
+    "grupo": "INCENDIO",
+    "obligatoria": true,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 50000,
+    "suma_maxima_asegurada": 50000000
+  },
+  {
+    "codigo_garantia": "INCENDIO_CONTENIDOS",
+    "nombre": "Incendio - Contenidos",
+    "descripcion": "Cobertura de incendio en contenidos y bienes muebles",
+    "grupo": "INCENDIO",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 10000,
+    "suma_maxima_asegurada": 20000000
+  },
+  {
+    "codigo_garantia": "CATTEV",
+    "nombre": "CAT Terremotos y Erupciones Volcánicas",
+    "descripcion": "Cobertura de daños por terremoto o erupción volcánica",
+    "grupo": "CATASTROFICOS",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 50000,
+    "suma_maxima_asegurada": 50000000
+  },
+  {
+    "codigo_garantia": "CATFHM",
+    "nombre": "CAT Fenómeno Hidrometeorológico",
+    "descripcion": "Cobertura de daños por ciclones, inundaciones y granizo",
+    "grupo": "CATASTROFICOS",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 50000,
+    "suma_maxima_asegurada": 50000000
+  },
+  {
+    "codigo_garantia": "ROBO",
+    "nombre": "Robo con Violencia",
+    "descripcion": "Cobertura de robo con violencia de bienes muebles",
+    "grupo": "ROBO",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 5000,
+    "suma_maxima_asegurada": 5000000
+  },
+  {
+    "codigo_garantia": "REMOCION_ESCOMBROS",
+    "nombre": "Remoción de Escombros",
+    "descripcion": "Gastos de remoción y limpieza tras siniestro",
+    "grupo": "GASTOS_ADICIONALES",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 5000,
+    "suma_maxima_asegurada": 1000000
+  },
+  {
+    "codigo_garantia": "GASTOS_EXTRAORDINARIOS",
+    "nombre": "Gastos Extraordinarios",
+    "descripcion": "Gastos adicionales por siniestro no cubiertos en otras garantías",
+    "grupo": "GASTOS_ADICIONALES",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 5000,
+    "suma_maxima_asegurada": 500000
+  },
+  {
+    "codigo_garantia": "PERDIDA_RENTAS",
+    "nombre": "Pérdida de Rentas",
+    "descripcion": "Indemnización por pérdida de rentas tras siniestro",
+    "grupo": "PERDIDAS_INDIRECTAS",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 10000,
+    "suma_maxima_asegurada": 2000000
+  },
+  {
+    "codigo_garantia": "EQUIPO_ELECTRONICO",
+    "nombre": "Equipo Electrónico",
+    "descripcion": "Cobertura de equipos de cómputo y electrónica",
+    "grupo": "EQUIPOS",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 5000,
+    "suma_maxima_asegurada": 5000000
+  },
+  {
+    "codigo_garantia": "VIDRIOS",
+    "nombre": "Rotura de Vidrios",
+    "descripcion": "Cobertura de rotura accidental de vidrios y cristales",
+    "grupo": "DAÑOS",
+    "obligatoria": false,
+    "tarifable": true,
+    "activa": true,
+    "suma_minima_asegurada": 1000,
+    "suma_maxima_asegurada": 200000
+  }
+]
