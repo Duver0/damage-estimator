@@ -1,0 +1,29 @@
+{
+  "codigo_parametro": "PARAMS_DEFAULT_2026",
+  "version": "1.0",
+  "descripcion": "Parámetros de cálculo para cotizador de daños 2026",
+  "margen_comercial": 0.35,
+  "recargo_primera": 0.15,
+  "desvaloracion_antiguedad": [
+    { "anio_construccion_min": 0, "anio_construccion_max": 1950, "factor": 1.5 },
+    { "anio_construccion_min": 1951, "anio_construccion_max": 1980, "factor": 1.2 },
+    { "anio_construccion_min": 1981, "anio_construccion_max": 2010, "factor": 1.0 },
+    { "anio_construccion_min": 2011, "anio_construccion_max": 9999, "factor": 0.9 }
+  ],
+  "factores_construccion": {
+    "LADRILLO_CONCRETO": 1.0,
+    "ACERO": 0.8,
+    "MADERA": 1.5,
+    "HORMIGON_ARMADO": 0.7
+  },
+  "factores_zona_cat": {
+    "APLICABLE": 1.5,
+    "NO_APLICABLE": 1.0
+  },
+  "recargos_cat": {
+    "CATFHM": 0.25,
+    "CATTEV": 0.15
+  },
+  "fecha_creacion": "2026-01-01T00:00:00Z",
+  "activo": true
+}
