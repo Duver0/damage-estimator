@@ -26,14 +26,34 @@ public class ValorNumericoEnPantalla implements Question<Double> {
                     driver.findElements(org.openqa.selenium.By.cssSelector("[class*='" + cssContiene + "']"));
 
             for (var el : elements) {
-                String text = el.getText().replaceAll("[^0-9,]", "").replace(",", ".");
-                if (!text.isEmpty()) {
-                    try {
-                        return Double.parseDouble(text);
-                    } catch (NumberFormatException ignored) {}
-                }
+                double val = extraerNumero(el.getText());
+                if (val > 0) return val;
             }
         } catch (Exception ignored) {}
+        return 0.0;
+    }
+
+    private double extraerNumero(String texto) {
+        if (texto == null || texto.isBlank()) return 0.0;
+        try {
+            String limpio = texto.replaceAll("[^0-9.,]", "");
+            if (limpio.isEmpty()) return 0.0;
+
+            int lastDot = limpio.lastIndexOf('.');
+            int lastComma = limpio.lastIndexOf(',');
+
+            String normalizado;
+            if (lastDot > lastComma) {
+                normalizado = limpio.replace(",", "");
+            } else if (lastComma > lastDot) {
+                normalizado = limpio.replace(".", "").replace(",", ".");
+            } else {
+                normalizado = limpio.replace(",", "").replace(".", "");
+            }
+
+            if (normalizado.isEmpty() || normalizado.equals(".")) return 0.0;
+            return Double.parseDouble(normalizado);
+        } catch (NumberFormatException ignored) {}
         return 0.0;
     }
 }

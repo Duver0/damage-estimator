@@ -93,7 +93,7 @@ export default function TechnicalInfoPage() {
           </button>
           <button
             className={styles.nextBtn}
-            onClick={() => navigate(`/quotes/${folio}/terms-and-conditions`)}
+            onClick={() => navigate(`/quotes/${folio}/terms-and-conditions`, { state: { primaNeta, primaComercial } })}
           >
             Términos y Confirmación
           </button>
