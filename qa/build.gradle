@@ -53,4 +53,13 @@ test {
     }
 }
 
+// clearReports usa Files.delete() que falla con directorio no vacío; override con delete recursivo
+tasks.matching { it.name == 'clearReports' }.configureEach {
+    doFirst {
+        delete fileTree(dir: "${project.projectDir}/target/site/serenity", include: '**/*')
+        delete "${project.projectDir}/target/site/serenity"
+    }
+    onlyIf { false }
+}
+
 test.finalizedBy aggregate
