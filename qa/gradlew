@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm --network damage-estimator_default -w /app -v "$(cd "$(dirname "$0")" && pwd)":/app gradle:8.5-jdk17 gradle "$@"
