@@ -1,0 +1,37 @@
+[
+  {
+    "codigo": "AG001",
+    "nombre": "Agencia Nacional Seguros S.A.",
+    "correo": "agente001@ans.com.co",
+    "telefono": "+573001234001",
+    "activo": true
+  },
+  {
+    "codigo": "AG002",
+    "nombre": "Protecciones del Norte Ltda.",
+    "correo": "norte@protecciones.com.co",
+    "telefono": "+573001234002",
+    "activo": true
+  },
+  {
+    "codigo": "AG003",
+    "nombre": "Intermediaria Andina S.C.",
+    "correo": "andina@inter.com.co",
+    "telefono": "+573101234003",
+    "activo": true
+  },
+  {
+    "codigo": "AG004",
+    "nombre": "Seguros Valle Agencia",
+    "correo": "valle@seguros.com.co",
+    "telefono": "+573201234004",
+    "activo": true
+  },
+  {
+    "codigo": "AG005",
+    "nombre": "Caribe Asesores S.A.S.",
+    "correo": "caribe@asesores.com.co",
+    "telefono": "+573001234005",
+    "activo": false
+  }
+]

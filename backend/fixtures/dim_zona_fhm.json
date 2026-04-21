@@ -1,0 +1,9 @@
+[
+  {
+    "zona": "CICLONES_ATLANTICO",
+    "descripcion": "Zonas de ciclones - Océano Atlántico",
+    "es_zona_fhm": true,
+    "estados": ["VERACRUZ", "TAMAULIPAS", "QUINTANA_ROO"],
+    "factor_aplicable": 1.25
+  }
+]
