@@ -1,0 +1,22 @@
+[
+  {
+    "clave_giro": "6311",
+    "clave_incendio": "1000",
+    "coberturaCat": "CATFHM",
+    "tasaCat": 0.025,
+    "recargo": 0.25,
+    "descripcion": "CAT por Fenómeno Hidrometeorológico",
+    "zona": ["ATLANTICO", "BOLIVAR"],
+    "vigente": true
+  },
+  {
+    "clave_giro": "6311",
+    "clave_incendio": "1000",
+    "coberturaCat": "CATTEV",
+    "tasaCat": 0.015,
+    "recargo": 0.15,
+    "descripcion": "CAT por Terremotos y Erupciones Volcánicas",
+    "zona": ["CUNDINAMARCA"],
+    "vigente": true
+  }
+]

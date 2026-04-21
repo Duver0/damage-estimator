@@ -1,0 +1,9 @@
+[
+  {
+    "zona": "COSTA_PACIFICO",
+    "descripcion": "Zonas de terremoto - Océano Pacífico",
+    "es_zona_tev": true,
+    "estados": ["JALISCO", "COLIMA", "MICHOACAN"],
+    "factor_aplicable": 1.5
+  }
+]
