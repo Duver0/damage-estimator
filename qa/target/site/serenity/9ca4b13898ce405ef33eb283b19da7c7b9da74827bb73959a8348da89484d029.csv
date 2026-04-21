@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Gestión de Cotizaciones en el Dashboard","El dashboard carga con título y tabla visibles","SUCCESS","2026-04-20T22:44:09.481273709Z[Etc/UTC]","0.0","1.67"
+"Gestión de Cotizaciones en el Dashboard","El botón Nueva Cotización crea una cotización y navega a datos generales","SUCCESS","2026-04-20T22:44:11.250078396Z[Etc/UTC]","0.0","1.81"
+"Gestión de Cotizaciones en el Dashboard","Eliminar cotización desde el dashboard","SUCCESS","2026-04-20T22:44:13.156015267Z[Etc/UTC]","0.0","2.53"
+"Gestión de Cotizaciones en el Dashboard","Ver detalle de una cotización existente","SUCCESS","2026-04-20T22:44:15.78820757Z[Etc/UTC]","0.0","2.23"
+"Gestión de Cotizaciones en el Dashboard","Editar cotización navega a datos generales","SUCCESS","2026-04-20T22:44:18.112503884Z[Etc/UTC]","0.0","2.34"

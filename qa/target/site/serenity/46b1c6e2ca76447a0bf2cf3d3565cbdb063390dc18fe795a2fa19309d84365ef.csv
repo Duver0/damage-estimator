@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Cálculo de Prima desde la Interfaz de Usuario","Calcular prima y ver resultado financiero","SUCCESS","2026-04-20T22:42:14.262732708Z[Etc/UTC]","0.0","9.92"
+"Registro de Ubicaciones de Riesgo en UI","Agregar ubicación incompleta sin garantías muestra error de validación","SUCCESS","2026-04-20T22:43:30.655321357Z[Etc/UTC]","0.0","19.57"
+"Flujo Completo de Cotización en la Interfaz de Usuario","Flujo completo desde dashboard hasta prima calculada con ubicación incompleta","SUCCESS","2026-04-20T22:44:20.557963238Z[Etc/UTC]","0.0","26.19"
+"Flujo Completo de Cotización en la Interfaz de Usuario","Flujo básico desde cotizador hasta prima calculada","SUCCESS","2026-04-20T22:44:46.868690432Z[Etc/UTC]","0.0","15.17"

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Captura de Datos Generales del Asegurado</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Captura de Datos Generales del Asegurado</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Captura de Datos Generales del Asegurado</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">32.782s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Completar datos generales y avanzar a ubicaciones</td>
+<td class="success">10.475s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Completar datos generales y avanzar a ubicaciones</td>
+<td class="success">10.280s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">El botón Atrás regresa al cotizador</td>
+<td class="success">3.676s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">El botón Atrás regresa al cotizador</td>
+<td class="success">3.855s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Intentar avanzar sin nombre de asegurado</td>
+<td class="success">4.496s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@datos_generales @ui @completar_datos @smoke
+Escenario: Completar datos generales y avanzar a ubicaciones           ?[90m# features/cotizador/datos_generales.feature:12?[0m
+  ?[32mDado ?[0m?[32mque existe un folio activo y el usuario está en datos generales?[0m ?[90m# com.cotizador.features.CommonUIStepDefinitions.folioActivoEnDatosGenerales()?[0m
+  ?[32mCuando ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;nombre&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;Empresa Colombiana S.A.&quot;?[0m      ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;apellidos&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;Sociedad Anónima&quot;?[0m               ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;email&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;empresa@co.co&quot;?[0m                      ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;telefono&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;+573001234567&quot;?[0m                   ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;numeroIdentificacion&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;900123456&quot;?[0m           ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mselecciona ?[0m?[32m?[1m&quot;NIT&quot;?[0m?[32m en el campo ?[0m?[32m?[1m&quot;tipoIdentificacion&quot;?[0m                  ?[90m# com.cotizador.features.CommonUIStepDefinitions.seleccionarEnCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhace clic en ?[0m?[32m?[1m&quot;Siguiente&quot;?[0m                                           ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnTexto(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mes redirigido a la página de ubicaciones?[0m                    ?[90m# com.cotizador.features.CommonUIStepDefinitions.redirigidoAUbicaciones()?[0m
+
+@datos_generales @ui @campo_requerido @error_path
+Escenario: Intentar avanzar sin nombre de asegurado                    ?[90m# features/cotizador/datos_generales.feature:23?[0m
+  ?[32mDado ?[0m?[32mque existe un folio activo y el usuario está en datos generales?[0m ?[90m# com.cotizador.features.CommonUIStepDefinitions.folioActivoEnDatosGenerales()?[0m
+  ?[32mCuando ?[0m?[32mborra el contenido del campo ?[0m?[32m?[1m&quot;nombre&quot;?[0m                         ?[90m# com.cotizador.features.CommonUIStepDefinitions.borrarCampo(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhace clic en ?[0m?[32m?[1m&quot;Siguiente&quot;?[0m                                           ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnTexto(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mpermanece en la página de datos generales?[0m                   ?[90m# com.cotizador.features.CommonUIStepDefinitions.permaneceDatosGenerales()?[0m
+
+@datos_generales @ui @navegacion_atras @smoke
+Escenario: El botón Atrás regresa al cotizador                         ?[90m# features/cotizador/datos_generales.feature:29?[0m
+  ?[32mDado ?[0m?[32mque existe un folio activo y el usuario está en datos generales?[0m ?[90m# com.cotizador.features.CommonUIStepDefinitions.folioActivoEnDatosGenerales()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en ?[0m?[32m?[1m&quot;Atrás&quot;?[0m                                          ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnTexto(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;/cotizador&quot;?[0m                                ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+
+@datos_generales @ui @completar_datos @smoke
+Escenario: Completar datos generales y avanzar a ubicaciones           ?[90m# features/cotizador/datos_generales.feature:12?[0m
+  ?[32mDado ?[0m?[32mque existe un folio activo y el usuario está en datos generales?[0m ?[90m# com.cotizador.features.CommonUIStepDefinitions.folioActivoEnDatosGenerales()?[0m
+  ?[32mCuando ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;nombre&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;Empresa Colombiana S.A.&quot;?[0m      ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;apellidos&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;Sociedad Anónima&quot;?[0m               ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;email&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;empresa@co.co&quot;?[0m                      ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;telefono&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;+573001234567&quot;?[0m                   ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mcompleta el campo ?[0m?[32m?[1m&quot;numeroIdentificacion&quot;?[0m?[32m con ?[0m?[32m?[1m&quot;900123456&quot;?[0m           ?[90m# com.cotizador.features.CommonUIStepDefinitions.completarCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mselecciona ?[0m?[32m?[1m&quot;NIT&quot;?[0m?[32m en el campo ?[0m?[32m?[1m&quot;tipoIdentificacion&quot;?[0m                  ?[90m# com.cotizador.features.CommonUIStepDefinitions.seleccionarEnCampo(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhace clic en ?[0m?[32m?[1m&quot;Siguiente&quot;?[0m                                           ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnTexto(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mes redirigido a la página de ubicaciones?[0m                    ?[90m# com.cotizador.features.CommonUIStepDefinitions.redirigidoAUbicaciones()?[0m
+
+@datos_generales @ui @navegacion_atras @smoke
+Escenario: El botón Atrás regresa al cotizador                         ?[90m# features/cotizador/datos_generales.feature:29?[0m
+  ?[32mDado ?[0m?[32mque existe un folio activo y el usuario está en datos generales?[0m ?[90m# com.cotizador.features.CommonUIStepDefinitions.folioActivoEnDatosGenerales()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en ?[0m?[32m?[1m&quot;Atrás&quot;?[0m                                          ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnTexto(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mla URL contiene ?[0m?[32m?[1m&quot;/cotizador&quot;?[0m                                ?[90m# com.cotizador.features.CommonUIStepDefinitions.verificarUrlContiene(java.lang.String)?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Apr 20, 2026, 10:45:02 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Registro de Ubicaciones de Riesgo en UI","Definir layout de 2 ubicaciones","SUCCESS","2026-04-20T22:43:12.690870124Z[Etc/UTC]","0.0","5.72"
+"Registro de Ubicaciones de Riesgo en UI","Agregar ubicación completa con CP válido","SUCCESS","2026-04-20T22:43:18.509869178Z[Etc/UTC]","0.0","12.05"
+"Registro de Ubicaciones de Riesgo en UI","Agregar ubicación incompleta sin garantías muestra error de validación","SUCCESS","2026-04-20T22:43:30.655321357Z[Etc/UTC]","0.0","19.57"
+"Registro de Ubicaciones de Riesgo en UI","Avanzar a información técnica con ubicación registrada","SUCCESS","2026-04-20T22:43:50.346642168Z[Etc/UTC]","0.0","14.29"
+"Registro de Ubicaciones de Riesgo en UI","El botón Atrás regresa a datos generales","SUCCESS","2026-04-20T22:44:04.737637724Z[Etc/UTC]","0.0","4.64"

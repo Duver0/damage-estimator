@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="1e2023fa747ac58ea6d5f67aec2cb4766283e4094b7562b2b8683c94a5faaa8b.html">Captura De Datos Generales Del Asegurado</a></span>
+                > <span class="truncate-60"><a
+                    href="6690b143fb1b3f95a075a087086ac74573139b6ca1f5158a834970c2263f5fba.html">Completar datos generales y avanzar a ubicaciones </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-04-2026 22:42</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Captura De Datos Generales Del Asegurado </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario del sistema<br />
+Quiero completar los datos generales de la cotización<br />
+Para continuar con el registro de ubicaciones
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="defe8724dc2e8e1c4b35eddb19ee3b76b33043a3c43d54373a5e0c467256fc80.html">Completar Datos
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="17577daaad2fd309e0837b76421d7c81a554f65af8961466d1a2c3c19c8c6e49.html">Ui
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="4df2a0cb43ac9cacc5d3678afdf705c621abb9a2338e2daa1d3899f87f5b996c.html">Linux
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="65a2df077748f74ccd607af4e962738958bdf672b0d6b0150ae42bcfa475044e.html">Smoke
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">Chrome, Linux
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="7582739910355d8e992ef14792a8d48aa8ea3f73fea1688ed19a829bafd26754.html">Datos Generales
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Completar datos generales y avanzar a ubicaciones
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="123f59d954963456d8f4f7f5136a866b2f98ec6977b877a97f0fced63a5ce088.png" title=" Dado que existe un folio activo y el usuario est&aacute; en datos generales" width="0"/>
+                <img src="123f59d954963456d8f4f7f5136a866b2f98ec6977b877a97f0fced63a5ce088.png" title=" Usuario opens the browser at http://cotizador_frontend:80/cotizador" width="0"/>
+                <img src="dd67cf357dcf302306ed82b92de1676da1d5a90929e7104936fe525db32319cc.png" title=" Usuario enters 'Test Corp' into campo nombre del asegurado" width="0"/>
+                <img src="9ff82bc13cbcacbbe2f68521cb429847d69264b4db90d6cac09930354a890c1a.png" title=" Usuario enters 'test@corp.co' into campo email" width="0"/>
+                <img src="cf9f484b57d80a2745e973e7146cbb9aedc9ef4d0b8645f965551ca969e8af69.png" title=" Usuario enters 'AG001' into campo c&oacute;digo de agente" width="0"/>
+                <img src="8a8b5c452ae32db9e8231c62b2a78a3eb5829031a57b83ca555d7eeaf95128cc.png" title=" Usuario clicks on bot&oacute;n Crear Folio" width="0"/>
+                <img src="8a8b5c452ae32db9e8231c62b2a78a3eb5829031a57b83ca555d7eeaf95128cc.png" title=" Dado que existe un folio activo y el usuario est&aacute; en datos generales (completed)" width="0"/>
+                <img src="8f619a4d34f403f7ec8bf49aafe9cc833cf608650adcbefbfb340b35b4c39026.png" title=" Cuando completa el campo &quot;nombre&quot; con &quot;Empresa Colombiana S.A.&quot;" width="0"/>
+                <img src="8f619a4d34f403f7ec8bf49aafe9cc833cf608650adcbefbfb340b35b4c39026.png" title=" Usuario clicks on campo nombre" width="0"/>
+                <img src="ed5b3b7670151cb6f451dee878ac24da848171bcd9877526fcc17deebbb3956b.png" title=" Usuario clears field campo nombre" width="0"/>
+                <img src="ba7c5c78b8ecafaa12c89bf4bdec6131fcb887b2824cd82010be305ed05f5735.png" title=" Usuario enters 'Empresa Colombiana S.A.' into campo nombre" width="0"/>
+                <img src="ba7c5c78b8ecafaa12c89bf4bdec6131fcb887b2824cd82010be305ed05f5735.png" title=" Cuando completa el campo &quot;nombre&quot; con &quot;Empresa Colombiana S.A.&quot; (completed)" width="0"/>
+                <img src="7edc7b91f7ba1ca699aee73e232575a14d412cffd18f9bcaf5aa6f8baa5da1e3.png" title=" Y completa el campo &quot;apellidos&quot; con &quot;Sociedad An&oacute;nima&quot;" width="0"/>
+                <img src="7edc7b91f7ba1ca699aee73e232575a14d412cffd18f9bcaf5aa6f8baa5da1e3.png" title=" Usuario clicks on campo apellidos" width="0"/>
+                <img src="dd7aef8238203bb05a94f1b69266a53dd4220f60dd44e89209398bf451681175.png" title=" Usuario clears field campo apellidos" width="0"/>
+                <img src="6e45a07cf1f6efc3b62aaf9b5fcebd9ece506b5a93afa3ce45355d6206df73bd.png" title=" Usuario enters 'Sociedad An&oacute;nima' into campo apellidos" width="0"/>
+                <img src="6e45a07cf1f6efc3b62aaf9b5fcebd9ece506b5a93afa3ce45355d6206df73bd.png" title=" Y completa el campo &quot;apellidos&quot; con &quot;Sociedad An&oacute;nima&quot; (completed)" width="0"/>
+                <img src="5c2c24c0d223f3f5e3961b7cc3332ae15d341624dd06b3be29f714d325ae355e.png" title=" Y completa el campo &quot;email&quot; con &quot;empresa@co.co&quot;" width="0"/>
+                <img src="5c2c24c0d223f3f5e3961b7cc3332ae15d341624dd06b3be29f714d325ae355e.png" title=" Usuario clicks on campo email" width="0"/>
+                <img src="6f2bacb21e46c6b99501360cfb1bd7b10b335e021579913fb3e4fa12c2cc158f.png" title=" Usuario clears field campo email" width="0"/>
+                <img src="452cd31057ae0b44543839c234c4f69fae632fbf2653f19209bb184399e627e4.png" title=" Usuario enters 'empresa@co.co' into campo email" width="0"/>
+                <img src="452cd31057ae0b44543839c234c4f69fae632fbf2653f19209bb184399e627e4.png" title=" Y completa el campo &quot;email&quot; con &quot;empresa@co.co&quot; (completed)" width="0"/>
+                <img src="99f8af1c585fda0d939965123131f144a27cc46b6013f0427100b4fb9f15715f.png" title=" Y completa el campo &quot;telefono&quot; con &quot;+573001234567&quot;" width="0"/>
+                <img src="99f8af1c585fda0d939965123131f144a27cc46b6013f0427100b4fb9f15715f.png" title=" Usuario clicks on campo telefono" width="0"/>
+                <img src="f15269e5f6442e1ffd5e5653ad77687727da85d5440cfca617d21bfcd4956f32.png" title=" Usuario clears field campo telefono" width="0"/>
+                <img src="807f736f449dd924b0afc5985af33b2d5f18f207013ab4024f8413d086ac9e11.png" title=" Usuario enters '+573001234567' into campo telefono" width="0"/>
+                <img src="807f736f449dd924b0afc5985af33b2d5f18f207013ab4024f8413d086ac9e11.png" title=" Y completa el campo &quot;telefono&quot; con &quot;+573001234567&quot; (completed)" width="0"/>
+                <img src="092b6ebd4f1cb5c6a1978e01f781783ed89030a8f3d12bc147e1e0c50c00624e.png" title=" Y completa el campo &quot;numeroIdentificacion&quot; con &quot;900123456&quot;" width="0"/>
+                <img src="092b6ebd4f1cb5c6a1978e01f781783ed89030a8f3d12bc147e1e0c50c00624e.png" title=" Usuario clicks on campo numeroIdentificacion" width="0"/>
+                <img src="29dd72f1123aeb6c65cf83be5ce499705c230dd7b2dbd3f73624777347a3f144.png" title=" Usuario clears field campo numeroIdentificacion" width="0"/>
+                <img src="5ade72138eed4f49b74d197bb09f5e8c2994b949b62b23f39f169f1a4e79d3aa.png" title=" Usuario enters '900123456' into campo numeroIdentificacion" width="0"/>
+                <img src="5ade72138eed4f49b74d197bb09f5e8c2994b949b62b23f39f169f1a4e79d3aa.png" title=" Y completa el campo &quot;numeroIdentificacion&quot; con &quot;900123456&quot; (completed)" width="0"/>
+                <img src="ff622c24aea473e2490d95ba988f99003916e4b523ee298684d1da698c00612c.png" title=" Y selecciona &quot;NIT&quot; en el campo &quot;tipoIdentificacion&quot;" width="0"/>
+                <img src="ff622c24aea473e2490d95ba988f99003916e4b523ee298684d1da698c00612c.png" title=" Usuario selects #value in select tipoIdentificacion" width="0"/>
+                <img src="ff622c24aea473e2490d95ba988f99003916e4b523ee298684d1da698c00612c.png" title=" Y selecciona &quot;NIT&quot; en el campo &quot;tipoIdentificacion&quot; (completed)" width="0"/>
+                <img src="4671dbecfdaf3910d61018cfa8f717403fe32af7edd7eef038f0640a4a7d724b.png" title=" Y hace clic en &quot;Siguiente&quot;" width="0"/>
+                <img src="4671dbecfdaf3910d61018cfa8f717403fe32af7edd7eef038f0640a4a7d724b.png" title=" Usuario clicks on bot&oacute;n Siguiente" width="0"/>
+                <img src="4671dbecfdaf3910d61018cfa8f717403fe32af7edd7eef038f0640a4a7d724b.png" title=" Y hace clic en &quot;Siguiente&quot; (completed)" width="0"/>
+                <img src="2a20931a11da093ea6c29f379164e59aa38bb5d26c0cc8a6c0f447c81da4c892.png" title=" Entonces es redirigido a la p&aacute;gina de ubicaciones: <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.9.8</span>
+</div>
+</body>
+</html>

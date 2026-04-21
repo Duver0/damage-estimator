@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Creación de Folio desde el Cotizador</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Creación de Folio desde el Cotizador</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Creación de Folio desde el Cotizador</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">12.180s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Crear folio completando el formulario básico</td>
+<td class="success">3.320s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Crear folio completando el formulario básico</td>
+<td class="success">3.535s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Intentar crear folio sin nombre muestra error</td>
+<td class="success">2.112s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Las cotizaciones recientes se muestran en el panel derecho</td>
+<td class="success">1.732s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Las cotizaciones recientes se muestran en el panel derecho</td>
+<td class="success">1.481s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@cotizador @ui @crear_folio_ui @smoke
+Escenario: Crear folio completando el formulario básico      ?[90m# features/cotizador/crear_folio.feature:12?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la página del cotizador?[0m       ?[90m# com.cotizador.features.CommonUIStepDefinitions.navegarCotizador()?[0m
+  ?[32mCuando ?[0m?[32mingresa el nombre del asegurado ?[0m?[32m?[1m&quot;Empresa Test S.A.&quot;?[0m ?[90m# com.cotizador.features.CotizadorStepDefinitions.ingresarNombre(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mingresa el correo ?[0m?[32m?[1m&quot;test@empresa.co&quot;?[0m                      ?[90m# com.cotizador.features.CotizadorStepDefinitions.ingresarCorreo(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mingresa el código de agente ?[0m?[32m?[1m&quot;AG001&quot;?[0m                      ?[90m# com.cotizador.features.CotizadorStepDefinitions.ingresarCodigoAgente(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhace clic en el botón ?[0m?[32m?[1m&quot;Crear Folio&quot;?[0m                      ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnBoton(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mes redirigido a la página de datos generales?[0m      ?[90m# com.cotizador.features.CommonUIStepDefinitions.redirigidoADatosGenerales()?[0m
+  ?[32mY ?[0m?[32mel número de folio aparece en el encabezado?[0m              ?[90m# com.cotizador.features.CotizadorStepDefinitions.folioEnEncabezado()?[0m
+
+@cotizador @ui @campos_vacios @error_path
+Escenario: Intentar crear folio sin nombre muestra error          ?[90m# features/cotizador/crear_folio.feature:21?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la página del cotizador?[0m            ?[90m# com.cotizador.features.CommonUIStepDefinitions.navegarCotizador()?[0m
+  ?[32mCuando ?[0m?[32mhace clic en el botón ?[0m?[32m?[1m&quot;Crear Folio&quot;?[0m?[32m sin completar campos?[0m ?[90m# com.cotizador.features.CotizadorStepDefinitions.hacerClicSinCampos(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mpermanece en la página del cotizador?[0m                   ?[90m# com.cotizador.features.CommonUIStepDefinitions.permaneceCotizador()?[0m
+
+@cotizador @ui @cotizaciones_recientes @smoke
+Escenario: Las cotizaciones recientes se muestran en el panel derecho ?[90m# features/cotizador/crear_folio.feature:26?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la página del cotizador?[0m                ?[90m# com.cotizador.features.CommonUIStepDefinitions.navegarCotizador()?[0m
+  ?[32mDado ?[0m?[32mque existen cotizaciones previas en el sistema?[0m                 ?[90m# com.cotizador.features.CotizadorStepDefinitions.existenCotizacionesPrevias()?[0m
+  ?[32mEntonces ?[0m?[32mel panel de cotizaciones recientes es visible?[0m              ?[90m# com.cotizador.features.CotizadorStepDefinitions.panelRecientesVisible()?[0m
+
+@cotizador @ui @crear_folio_ui @smoke
+Escenario: Crear folio completando el formulario básico      ?[90m# features/cotizador/crear_folio.feature:12?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la página del cotizador?[0m       ?[90m# com.cotizador.features.CommonUIStepDefinitions.navegarCotizador()?[0m
+  ?[32mCuando ?[0m?[32mingresa el nombre del asegurado ?[0m?[32m?[1m&quot;Empresa Test S.A.&quot;?[0m ?[90m# com.cotizador.features.CotizadorStepDefinitions.ingresarNombre(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mingresa el correo ?[0m?[32m?[1m&quot;test@empresa.co&quot;?[0m                      ?[90m# com.cotizador.features.CotizadorStepDefinitions.ingresarCorreo(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mingresa el código de agente ?[0m?[32m?[1m&quot;AG001&quot;?[0m                      ?[90m# com.cotizador.features.CotizadorStepDefinitions.ingresarCodigoAgente(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhace clic en el botón ?[0m?[32m?[1m&quot;Crear Folio&quot;?[0m                      ?[90m# com.cotizador.features.CommonUIStepDefinitions.hacerClicEnBoton(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mes redirigido a la página de datos generales?[0m      ?[90m# com.cotizador.features.CommonUIStepDefinitions.redirigidoADatosGenerales()?[0m
+  ?[32mY ?[0m?[32mel número de folio aparece en el encabezado?[0m              ?[90m# com.cotizador.features.CotizadorStepDefinitions.folioEnEncabezado()?[0m
+
+@cotizador @ui @cotizaciones_recientes @smoke
+Escenario: Las cotizaciones recientes se muestran en el panel derecho ?[90m# features/cotizador/crear_folio.feature:26?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la página del cotizador?[0m                ?[90m# com.cotizador.features.CommonUIStepDefinitions.navegarCotizador()?[0m
+  ?[32mDado ?[0m?[32mque existen cotizaciones previas en el sistema?[0m                 ?[90m# com.cotizador.features.CotizadorStepDefinitions.existenCotizacionesPrevias()?[0m
+  ?[32mEntonces ?[0m?[32mel panel de cotizaciones recientes es visible?[0m              ?[90m# com.cotizador.features.CotizadorStepDefinitions.panelRecientesVisible()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Apr 20, 2026, 10:45:02 PM</p>
+</div>
+</div>
+</body>
+</html>

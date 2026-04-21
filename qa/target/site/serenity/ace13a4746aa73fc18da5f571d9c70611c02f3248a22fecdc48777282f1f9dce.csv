@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Creación de Folio desde el Cotizador","Intentar crear folio sin nombre muestra error","SUCCESS","2026-04-20T22:40:00.505916634Z[Etc/UTC]","0.0","2.01"
+"Creación de Folio desde el Cotizador","Crear folio completando el formulario básico","SUCCESS","2026-04-20T22:42:53.917068556Z[Etc/UTC]","0.0","3.22"
+"Creación de Folio desde el Cotizador","Las cotizaciones recientes se muestran en el panel derecho","SUCCESS","2026-04-20T22:42:57.236885603Z[Etc/UTC]","0.0","1.39"
