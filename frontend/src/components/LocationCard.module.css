@@ -1,0 +1,75 @@
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--color-surface);
+}
+
+.complete { border-left: 4px solid var(--color-success); }
+.incomplete { border-left: 4px solid var(--color-warning); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.badge.complete {
+  background: #dcfce7;
+  color: var(--color-success);
+}
+
+.badge.incomplete {
+  background: #fffbeb;
+  color: var(--color-warning);
+}
+
+.body { margin-bottom: 0.75rem; }
+
+.info {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.alerts {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.alert {
+  font-size: 0.8125rem;
+  color: var(--color-warning);
+  padding: 0.25rem 0;
+}
+
+.alert::before { content: '⚠ '; }
+
+.actions { display: flex; gap: 0.5rem; }
+
+.editBtn {
+  padding: 0.375rem 0.875rem;
+  border: 1px solid var(--color-primary);
+  background: transparent;
+  color: var(--color-primary);
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+}
+
+.editBtn:hover {
+  background: #eff6ff;
+}
