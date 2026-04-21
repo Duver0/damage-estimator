@@ -54,13 +54,24 @@ public class PrimaPorLabel implements Question<Double> {
         try {
             String limpio = texto.replaceAll("[^0-9.,]", "");
             if (limpio.isEmpty()) return 0.0;
-            if (limpio.contains(",")) {
-                limpio = limpio.replace(".", "").replace(",", ".");
+
+            int lastDot = limpio.lastIndexOf('.');
+            int lastComma = limpio.lastIndexOf(',');
+
+            String normalizado;
+            if (lastDot > lastComma) {
+                // US/MX format: 1,234,567.89 → strip commas (thousands separator)
+                normalizado = limpio.replace(",", "");
+            } else if (lastComma > lastDot) {
+                // European format: 1.234.567,89 → strip dots, replace comma with dot
+                normalizado = limpio.replace(".", "").replace(",", ".");
             } else {
-                limpio = limpio.replace(".", "");
+                // No decimal separator — plain integer-like
+                normalizado = limpio.replace(",", "").replace(".", "");
             }
-            if (limpio.isEmpty() || limpio.equals(".")) return 0.0;
-            return Double.parseDouble(limpio);
+
+            if (normalizado.isEmpty() || normalizado.equals(".")) return 0.0;
+            return Double.parseDouble(normalizado);
         } catch (NumberFormatException ignored) {}
         return 0.0;
     }
