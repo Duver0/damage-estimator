@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Creación de Folio desde el Cotizador","Intentar crear folio sin nombre muestra error","SUCCESS","2026-04-20T22:40:00.505916634Z[Etc/UTC]","0.0","2.01"
-"Captura de Datos Generales del Asegurado","Intentar avanzar sin nombre de asegurado","SUCCESS","2026-04-20T22:40:14.835017365Z[Etc/UTC]","0.0","4.39"

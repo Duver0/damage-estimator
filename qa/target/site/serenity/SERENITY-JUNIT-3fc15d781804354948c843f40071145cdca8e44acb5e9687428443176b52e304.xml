@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Creación de Folio desde el Cotizador" skipped="0" tests="2" time="4.61" timestamp="2026-04-20 10:42:53"><testcase name="Crear folio completando el formulario básico"/><testcase name="Las cotizaciones recientes se muestran en el panel derecho"/></testsuite>
