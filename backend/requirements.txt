@@ -1,0 +1,15 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+motor==3.7.0
+pydantic==2.10.6
+pydantic-settings==2.8.1
+pymongo==4.11.3
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+mongomock-motor==0.0.34
+mongomock==4.3.0
